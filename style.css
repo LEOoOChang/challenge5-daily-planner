@@ -35,12 +35,12 @@ textarea {
   color: white;
 }
 
-.present {
+.present .event {
   background-color: #ff6961;
   color: white;
 }
 
-.future {
+.future .event {
   background-color: #77dd77;
   color: white;
 }
