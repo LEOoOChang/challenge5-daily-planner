@@ -8,5 +8,5 @@ Furthermore, texts entered in the time blocks are securely saved and remained sa
 
 ## Screenshots
 
-![Screenshot1](assets/Screenshot 2023-05-23 at 11.18.32 AM.png)
-![Screenshot2](assets/Screenshot 2023-05-23 at 11.26.43 AM.png)
+![Screenshot1](https://github.com/LEOoOChang/challenge5-daily-planner/blob/main/assets/Screenshot%202023-05-23%20at%2011.18.32%20AM.png)
+![Screenshot2](https://github.com/LEOoOChang/challenge5-daily-planner/blob/main/assets/Screenshot%202023-05-23%20at%2011.26.43%20AM.png)
