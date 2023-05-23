@@ -10,7 +10,6 @@ var tasks = JSON.parse(localStorage.getItem("tasks")) || {};
 function updateTimeBlocks() {
   var currentHour = dayjs().hour();
 
-  // Set background color based on current time
   if (currentHour < 9 || currentHour >= 21) {
     $(".time-block").addClass("future");
   } else if (currentHour >= 9 && currentHour < 17) {
@@ -45,21 +44,11 @@ function updateTimeBlocks() {
 
 updateTimeBlocks();
 
-// Save task to local storage when save button is clicked
-$(".saveBtn").on("click", function () {
-  var hour = $(this).siblings(".hour").text().replace(/[^\d]/g, "");
-  var description = $(this).siblings(".description").val();
-
-  tasks[hour] = description;
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-});
-
-// Refresh time blocks every 15 minutes
 setInterval(function () {
   updateTimeBlocks();
 }, 15 * 60 * 1000);
 
-// Load saved tasks from local storage on page load
+// Load saved tasks from local storage 
 $(document).ready(function () {
   updateTimeBlocks();
 });
@@ -73,12 +62,12 @@ setInterval(function () {
   }
 }, 60 * 60 * 1000);
 
-// Allow user to input task when time block is clicked
+// Allow user to enter task when time block is clicked
 $(".description").on("click", function () {
   $(this).addClass("user-input");
 });
 
-// Save task to local storage when user leaves text area
+// Save task to local storage 
 $(".description").on("blur", function () {
   var hour = $(this).data("hour");
   var description = $(this).val();
